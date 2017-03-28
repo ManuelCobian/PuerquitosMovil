@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.joseantonio.puerquitos.MainActivity"
+    android:background="@drawable/ventana"
+
+    >
+
+    <ScrollView
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/scrollView2"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/Puercos"
+                android:layout_width="370dp"
+                android:layout_height="115dp"
+
+                android:layout_marginTop="39dp"
+
+                android:background="#66bb6a"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/Total"
+                android:layout_width="370dp"
+                android:layout_height="115dp"
+
+                android:layout_marginTop="66dp"
+                android:background="#66bb6a"
+
+                android:gravity="center"
+                android:padding="20dp"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:layout_below="@+id/Puercos"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/busqueda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:ems="10"
+
+
+                android:layout_marginTop="81dp"
+                android:background="#fff"
+
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:hint="Buscar..."
+                android:imeOptions="actionSearch"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:paddingRight="20dp"
+                android:textColor="#060104"
+                android:textColorHint="#C4C4C4"
+                android:visibility="visible"
+                android:layout_below="@+id/Total"
+                android:layout_centerHorizontal="true" />
+
+
+
+
+            <Button
+                android:id="@+id/busquedas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/custom_button"
+                android:text="Buscar Puerco"
+                android:textColor="#fff"
+                android:layout_marginTop="51dp"
+                android:layout_below="@+id/busqueda"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/gracias"
+                android:layout_marginTop="400dp"
+
+                />
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
